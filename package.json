@@ -11,5 +11,10 @@
   "dependencies": {
     "moment": "^2.29.3",
     "uniq": "^1.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2"
   }
 }
