@@ -1,1 +1,1 @@
-(()=>{"use strict";alert("Hi from webpack")})();
+(()=>{"use strict";console.log("Hello")})();

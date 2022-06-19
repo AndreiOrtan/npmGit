@@ -1,4 +1,2 @@
-function greet() {
-  alert("Hi from webpack");
-}
+const greet = () => "Hello";
 export default greet;

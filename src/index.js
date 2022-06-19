@@ -1,2 +1,3 @@
 import greet from "./sample.js";
-greet();
+const greeting = greet();
+console.log(greeting);
