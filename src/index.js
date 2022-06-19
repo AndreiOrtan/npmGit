@@ -1,1 +1,3 @@
-const add = (num1, num2) => num1 + num2;
+import greet from "./sample.js";
+const greeting = greet();
+console.log(greeting);
