@@ -10,7 +10,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "Custom template",
-      template: "boiler.html",
+      template: "templates/index.html",
     }),
   ],
   module: {
