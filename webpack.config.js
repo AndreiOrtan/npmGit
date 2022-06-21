@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+  mode: "development",
   entry: "./src/index.js",
   output: {
     filename: "main.js",
@@ -9,10 +10,14 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Custom template",
+      title: "My Own React!",
       template: "templates/index.html",
     }),
   ],
+  devServer: {
+    port: 3000,
+  },
+
   module: {
     rules: [
       {
