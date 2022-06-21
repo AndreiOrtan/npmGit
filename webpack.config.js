@@ -10,13 +10,12 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Development",
+      title: "My Own React!",
       template: "templates/index.html",
     }),
   ],
-
   devServer: {
-    static: "./dist",
+    port: 3000,
   },
 
   module: {
