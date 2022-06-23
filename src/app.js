@@ -1,7 +1,9 @@
 import createElement from "./components/header/header";
 
+const divContainer = document.querySelector(".container");
+
 function app() {
-  document.body.append(createElement());
+  divContainer.append(createElement());
 }
 
 export default app;

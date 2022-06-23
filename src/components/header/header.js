@@ -1,11 +1,10 @@
-function createElement() {
-  const element = document.createElement("header");
-  element.style.color = "red";
-  element.textContent = "This is Ortan's page.";
-  element.classList.toggle("title");
+import "./header.css";
 
+function createElement() {
+  const element = document.createElement("h3");
+  element.textContent = "My React App!";
+  element.className = "main_header";
   return element;
 }
 
-import css from "../header/header.css";
 export default createElement;
