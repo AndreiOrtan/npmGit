@@ -1,9 +1,9 @@
-import createElement from "./components/header/header";
+import createHeader from "./components/header/header";
 
-const divContainer = document.querySelector(".container");
+// const divContainer = document.querySelector(".container");
 
 function app() {
-  divContainer.append(createElement());
+  document.body.append(createHeader());
 }
 
 export default app;

@@ -1,10 +1,24 @@
+import generateElement from "../../../lib/generateElement/generateElement";
 import "./header.css";
 
-function createElement() {
-  const element = document.createElement("h3");
-  element.textContent = "My React App!";
-  element.className = "main_header";
-  return element;
+function createHeader() {
+  const div1 = generateElement("div", { class: "container" });
+  const title = generateElement(
+    "h3",
+    {
+      class: "main_header",
+    },
+    ["My React!"]
+  );
+  div1.appendChild(title);
+  const nav = generateElement(
+    "nav",
+    {
+      class: "grey darken-3",
+    },
+    [div1]
+  );
+  return nav;
 }
 
-export default createElement;
+export default createHeader;
