@@ -1,7 +1,4 @@
-import greet from "./src/sample.js";
 import app from "./src/app";
+const rootDiv = document.getElementById("root");
 
-const greeting = greet();
-console.log(greeting);
-
-app();
+app(rootDiv);

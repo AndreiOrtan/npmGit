@@ -1,9 +1,7 @@
 import createHeader from "./components/header/header";
 
-// const divContainer = document.querySelector(".container");
-
-function app() {
-  document.body.append(createHeader());
+function app(element) {
+  element.appendChild(createHeader());
 }
 
 export default app;
