@@ -1,0 +1,13 @@
+.current-price {
+  font-weight: 600;
+}
+.current-change {
+  color: #388e3c;
+  font-weight: 600;
+}
+.current-date {
+  font-size: 10px;
+}
+.card-panel {
+  margin: 0;
+}
