@@ -1,9 +1,19 @@
 import createHeader from "./components/header/header";
-import createSection from "./components/section/section";
+import StockBanner from "./components/section/StockBanner";
 
 function app(element) {
   element.appendChild(createHeader());
-  element.appendChild(createSection());
+  const divLayout = document.createElement("div");
+  divLayout.className = "layout";
+  divLayout.appendChild(
+    StockBanner({
+      company: "Apple Inc",
+      companyInfo: "Apple has the best software.",
+      currentPrice: "$183.32",
+      currentChange: "+$13.87(+9.87%)",
+    })
+  );
+  element.appendChild(divLayout);
 }
 
 export default app;
