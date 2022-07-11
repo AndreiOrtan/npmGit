@@ -1,7 +1,7 @@
 .current-price {
   font-weight: 600;
 }
-.current-change {
+.old-price {
   color: #388e3c;
   font-weight: 600;
 }

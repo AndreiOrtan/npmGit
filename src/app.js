@@ -1,19 +1,18 @@
-import createHeader from "./components/header/header";
+import createHeader from "./components/header/Header";
 import StockBanner from "./components/section/StockBanner";
+import Layout from "./components/layout/Layout.js";
 
 function app(element) {
   element.appendChild(createHeader());
-  const divLayout = document.createElement("div");
-  divLayout.className = "layout";
-  divLayout.appendChild(
+  Layout.appendChild(
     StockBanner({
       company: "Apple Inc",
       companyInfo: "Apple has the best software.",
-      currentPrice: "$183.32",
-      currentChange: "+$13.87(+9.87%)",
+      currentPrice: 191.58,
+      oldPrice: 183.44,
     })
   );
-  element.appendChild(divLayout);
+  element.appendChild(Layout);
 }
 
 export default app;
