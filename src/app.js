@@ -1,9 +1,16 @@
-import createHeader from "./components/header/header";
+import createHeader from "./components/header/Header";
+import StockBanner from "./components/section/StockBanner";
+import Layout from "./components/layout/Layout.js";
+import companies from "../data/mockCompanies";
 
-// const divContainer = document.querySelector(".container");
+function app(element) {
+  element.appendChild(createHeader());
 
-function app() {
-  document.body.append(createHeader());
+  companies.forEach((company) => {
+    Layout.appendChild(StockBanner(company));
+  });
+
+  element.appendChild(Layout);
 }
 
 export default app;
